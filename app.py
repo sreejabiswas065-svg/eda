@@ -14,29 +14,17 @@ from sklearn.decomposition import PCA
 
 sns.set(style="whitegrid")
 
-# ==========================================
-# UI HEADER
-# ==========================================
 st.set_page_config(page_title="E-Commerce Analysis", layout="wide")
 st.title("E-Commerce EDA & Predictive Analysis")
 
-# ==========================================
-# FILE UPLOAD
-# ==========================================
 uploaded_file = st.file_uploader("Upload CSV File", type=["csv"])
 
 if uploaded_file is not None:
 
     df = pd.read_csv(uploaded_file)
 
-    # ==========================================
-    # TABS
-    # ==========================================
     tab1, tab2, tab3 = st.tabs(["EDA", "Visualization", "ML Models"])
 
-    # ==========================================
-    # TAB 1 - EDA
-    # ==========================================
     with tab1:
         st.subheader("Dataset Overview")
 

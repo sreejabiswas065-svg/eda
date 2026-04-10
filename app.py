@@ -15,7 +15,7 @@ from sklearn.decomposition import PCA
 sns.set(style="whitegrid")
 
 st.set_page_config(page_title="Machine learning Training", layout="wide")
-st.title("E-Commerce EDA & Predictive Analysis")
+st.title("Machine learning Training")
 
 uploaded_file = st.file_uploader("Upload CSV File", type=["csv"])
 

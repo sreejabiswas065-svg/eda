@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import json
+import 
 
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report, mean_squared_error, r2_score
@@ -14,7 +15,7 @@ from sklearn.decomposition import PCA
 
 sns.set(style="whitegrid")
 
-st.set_page_config(page_title="E-Commerce Analysis", layout="wide")
+st.set_page_config(page_title="Machine learning Training", layout="wide")
 st.title("E-Commerce EDA & Predictive Analysis")
 
 uploaded_file = st.file_uploader("Upload CSV File", type=["csv"])
